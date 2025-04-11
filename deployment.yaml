@@ -4,7 +4,7 @@ metadata:
   name: helloweb
   namespace: helloweb
 spec:
-  replicas: 3
+  replicas: 0
   selector:
     matchLabels:
       app: helloweb
