@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: helloweb
+  namespace: helloweb
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: helloweb
+  template:
+    metadata:
+      labels:
+        app: helloweb
+    spec:
+      containers:
+      - name: helloweb
+        image: panneer30121986/helloweb
+        ports:
+        - containerPort: 5000
+
